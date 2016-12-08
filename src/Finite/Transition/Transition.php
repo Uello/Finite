@@ -69,6 +69,14 @@ class Transition implements PropertiesAwareTransitionInterface
     }
 
     /**
+     * @return OptionsResolver
+     */
+    public function getOptionsResolver()
+    {
+        return $this->propertiesOptionsResolver;
+    }
+
+    /**
      * @param string|StateInterface $state
      */
     public function addInitialState($state)
